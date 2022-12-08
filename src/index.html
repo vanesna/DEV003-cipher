@@ -4,11 +4,47 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module"></script>
   </head>
   <body>
+    
+    
     <div id="root">
-      <h1>Hello world!</h1>
+
+      <h1>Bienvenido</h1>
+
+      <div class="datos">
+      <form>   
+      <h2>Para ingresar a su cuenta de banco debe cifrar el mensaje</h2> 
+      
+        <div>
+          <label for="Messaje">Ingresa el mensaje</label> 
+          <input type="text" style="text-transform:uppercase" id="Messaje" placeholder="MENSAJE" onkeypress="return (event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)"/> <!-- ascii de la tecla -->
+        </div>
+        <br>
+        <div>
+          <label for="offset">Selecciona el desplazamiento</label>
+          <input type="number" id="offset" name="offset" min="1" max="40"> 
+        </div>
+          <br>
+          <div>
+            <button type="button" id="encodeButton" > Codificar </button>
+          </div>
+          <br>
+          <div>
+            <button type="button" id="decodeButton" > Decodificar </button>
+          </div>
+          <br>
+          <div>
+            <p><input type="text" id="mensajeCifrado"></p>
+          </div>
+      </form>
+      </div>
     </div>
-    <script src="index.js" type="module"></script>
+
+    
+   
+
+    
   </body>
 </html>

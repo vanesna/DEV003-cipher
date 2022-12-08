@@ -1,0 +1,57 @@
+body {
+    background-image: url(imgs/monedas.jpg);
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    
+    background-repeat: no-repeat;
+    background-position: 100% 220px;
+
+    text-align: center
+    
+    }
+
+#mensajeCifrado {
+    width: 250px;
+    height: 70px;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+   
+}
+
+.datos {
+    width: 30%;
+    background-color: #58ACFA;
+    padding: 1em 3em;
+    border-radius: 12px;
+    /*margin-left: 150px;*/
+    text-align: center;
+    border: 6px groove gray;
+    margin:auto;
+    margin-top: 5%;
+}
+
+
+#encodeButton, #decodeButton {
+    font-size: 15px;
+    width: 50%;
+    height: 30px;
+    background-color: gray;
+    color: white;
+    border-radius: 12px;
+    /*margin-left: 120px;*/
+    cursor: pointer;
+    border: 2px solid white;
+  }
+
+  #encodeButton:hover, #decodeButton:hover {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+  }
