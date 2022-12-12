@@ -1,10 +1,5 @@
 import cipher from './cipher.js';
 
-
-//window.addEventListener("load", inicio, true); //Terminó de cargar los recursos
-
-//function inicio()
-//{
 //Botón para codificar
 document.getElementById("encodeButton").addEventListener("click", function()
 {
@@ -22,5 +17,5 @@ document.getElementById("decodeButton").addEventListener("click", function()
      
   document.getElementById("mensajeCifrado").value = cipher.decode(offset, mensaje); //Valor del mensaje decodificado
 });
-//}
+
   

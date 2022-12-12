@@ -6,6 +6,7 @@ const cipher = {
     if (offset <= 0 && mensaje !== 'string'){
       throw new TypeError();
     }
+
     let resultado = "";
      
     for (let i = 0; i < mensaje.length; i++)
@@ -13,15 +14,14 @@ const cipher = {
       const character = mensaje.charCodeAt(i);
       let encode;
 
-      if(character >= 65 && character <= 90){
-       
-        const numberEncode = ((character - 65 + parseInt(offset)) %26) + 65; 
-        encode = String.fromCharCode(numberEncode);
-
-      }
       if(character === 32)
       {
         encode = String.fromCharCode(character);
+      }
+
+      else{
+        const numberEncode = ((character - 65 + parseInt(offset)) %26) + 65; //parseInt convierte de cadena a entero
+        encode = String.fromCharCode(numberEncode); //Devuelve una cadena
       }
       
       resultado = resultado + encode;
@@ -45,21 +45,19 @@ const cipher = {
     {
       let decode;
       const character = mensaje.charCodeAt(i);
-
-      if(character >= 65 && character <= 90){
-        const numberEncode = ((character - 90 - parseInt(offset)) %26) +90;
-        decode = String.fromCharCode(numberEncode);
-      }
       
       if(character === 32){
         decode = String.fromCharCode(character);
       }
 
+      else{
+        const numberEncode = ((character - 90 - parseInt(offset)) %26) +90;
+        decode = String.fromCharCode(numberEncode);
+      }
+
       resultado = resultado + decode;
     }
 
-   
-   
     return resultado;  
 
   } 
