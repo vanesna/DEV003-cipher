@@ -1,40 +1,40 @@
 body {
-    background-image: url(imgs/monedas.jpg);
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-    
-    background-repeat: no-repeat;
-    background-position: 100% 220px;
-
-    text-align: center
+    background-image: url(imgs/spy.jpg);    
+    /*background-repeat: no-repeat;*/
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /*background-position: 100% 220px;*/
     
     }
 
 #mensajeCifrado {
     width: 250px;
-    height: 70px;
+    height: 20px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
+    font-family: Didot;
 }
 
-h2 {
+.mensaje {
     font-size: 18px;
     text-align: center;
-   
+    font-family: Garamond;
 }
 
 .datos {
-    width: 30%;
-    background-color: #58ACFA;
+    width: 20%;
+    background-color:  #F5CBA7;
     padding: 1em 3em;
     border-radius: 12px;
-    /*margin-left: 150px;*/
+    margin-left: 622px;
+    margin-top: 100px;
     text-align: center;
     border: 6px groove gray;
-    margin:auto;
-    margin-top: 5%;
+    /*margin:auto;*/
+    /*margin-top: 5%;*/
 }
 
 
@@ -48,10 +48,12 @@ h2 {
     /*margin-left: 120px;*/
     cursor: pointer;
     border: 2px solid white;
+    font-family: Courier New;
+    
   }
 
   #encodeButton:hover, #decodeButton:hover {
-    background-color: blue;
+    background-color: #922B21 ;
     color: white;
     border: 2px solid white;
   }

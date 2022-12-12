@@ -11,33 +11,33 @@
     
     <div id="root">
 
-      <h1>Bienvenido</h1>
-
       <div class="datos">
       <form>   
-      <h2>Para ingresar a su cuenta de banco debe cifrar el mensaje</h2> 
+      <h1>Bienvenido agente 🕵🏻‍♀️</h1> 
       
-        <div>
-          <label for="Messaje">Ingresa el mensaje</label> 
-          <input type="text" style="text-transform:uppercase" id="Messaje" placeholder="MENSAJE" onkeypress="return (event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)"/> <!-- ascii de la tecla -->
-        </div>
+        <div class="mensaje">
+          <label for="Messaje">Ingresa el mensaje:</label> 
+          <input type="text" style="text-transform:uppercase" id="Messaje" onkeypress="return (event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)"/> <!-- ascii de la tecla -->
         <br>
-        <div>
-          <label for="offset">Selecciona el desplazamiento</label>
-          <input type="number" id="offset" name="offset" min="1" max="40"> 
+        <br>
+          <label for="offset">Desplazamiento:</label>
+          <br>
+          <input type="number" id="offset" name="offset" min="1" max="40" onkeypress=" return (event.charCode >= 48 && event.charCode <= 57)"> 
         </div>
           <br>
           <div>
             <button type="button" id="encodeButton" > Codificar </button>
           </div>
-          <br>
-          <div>
-            <button type="button" id="decodeButton" > Decodificar </button>
+            <br>
+            <div>
+              <button type="button" id="decodeButton" > Decodificar </button>
+            </div>
+            <div>
+              <p><input type="text" id="mensajeCifrado"></p>
+            </div>
           </div>
-          <br>
-          <div>
-            <p><input type="text" id="mensajeCifrado"></p>
-          </div>
+        
+          
       </form>
       </div>
     </div>
