@@ -1,18 +1,16 @@
 # Cifrado César
 
 
-
+https://github.com/vanesna/DEV003-cipher/blob/7bc48d9a7213d036c4e9185fca8acec9cfed3268/interfaz.png
 
 
 * El producto está pensado para utilizarse en agencias que se dedican a la investigación de delitos de cualquier tipo o para investigadores privados.
+
 * El principal objetivo es poner a su alcance un medio de comunicación seguro para el envío y recepción de mensajes con un nivel de confidencialidad bajo a medio.
-* 
 
-
-
-
-
-
+* Se le brindan dos opciones al usuario:
+**1.** Si desea enviar un mensaje codificar, el usuario ingresa el mensaje(solo letras) y un desplazamiento(no acepta números negativos) y le devuelve su mensaje que puede ser compartido de forma más segura.
+**2.** En caso de que reciba un mensaje codificado y desee decodificarlo solo debe ingresar la información proporcionada y la app le mostrara el mensaje real. 
 
 ## Índice
 
