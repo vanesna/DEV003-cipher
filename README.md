@@ -1,5 +1,6 @@
 # Cifrado César
 
+Se pensó en un diseño sencillo y de fácil acceso para que el usuario pueda utilizarlo sin complicaciones siguiendo un flujo vertical, es decir comienza ingresando el mensaje y termina con el mensaje codificado o decodificado según sea el caso.
 
 ![interfaz](https://github.com/vanesna/DEV003-cipher/blob/7bc48d9a7213d036c4e9185fca8acec9cfed3268/interfaz.png)
 
