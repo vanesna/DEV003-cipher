@@ -1,5 +1,19 @@
 # Cifrado César
 
+
+
+
+
+* El producto está pensado para utilizarse en agencias que se dedican a la investigación de delitos de cualquier tipo o para investigadores privados.
+* El principal objetivo es poner a su alcance un medio de comunicación seguro para el envío y recepción de mensajes con un nivel de confidencialidad bajo a medio.
+* 
+
+
+
+
+
+
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
