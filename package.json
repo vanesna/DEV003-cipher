@@ -43,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/vanesna/DEV003-cipher/issues"
   },
-  "homepage": "https://github.com/vanesna/DEV003-cipher#readme"
+  "homepage": "https://github.com/vanesna/DEV003-cipher#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.5"
+  }
 }
