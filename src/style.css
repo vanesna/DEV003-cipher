@@ -1,4 +1,6 @@
-
+body {
+    margin: 0;
+}
 
 :root {
     --clr-1: #0293D2;
