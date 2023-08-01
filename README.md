@@ -2,7 +2,7 @@
 
 Se pensó en un diseño sencillo y de fácil acceso para que el usuario pueda utilizarlo sin complicaciones siguiendo un flujo vertical, es decir comienza ingresando el mensaje y termina con el mensaje codificado o decodificado según sea el caso.
 
-![interfaz](https://github.com/vanesna/DEV003-cipher/blob/7bc48d9a7213d036c4e9185fca8acec9cfed3268/interfaz.png)
+![interfaz](https://i.postimg.cc/L8B2C9GR/Captura-de-pantalla-2023-08-01-163821.png)
 
 
 * El producto está pensado para utilizarse en agencias que se dedican a la investigación de delitos de cualquier tipo o para investigadores privados.
