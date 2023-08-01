@@ -1,4 +1,14 @@
 
+
+:root {
+    --clr-1: #0293D2;
+    --clr-2: #073438;
+    --clr-3: #20EF0E;
+    --clr-4: #1ED60D;
+    --clr-5: #23FC0F;
+}
+
+
 header {
     background-color: black;
     height: 5vh;
@@ -16,110 +26,70 @@ header {
     align-items: center;
 }
 
-@property --gradient-angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-:root {
-    --clr-1: #052b2f;
-    --clr-2: #073438;
-    --clr-3: #20EF0E;
-    --clr-4: #1ED60D;
-    --clr-5: #23FC0F;
-}
-
 main {
     background-image: url('background.jpg');
-    min-height: 100vh;
+    height: 100vh;
+    /* min-width: 100vw; */
     display: grid;
     place-content: center;
 }
 
 .card {
-    height: 30rem;
     aspect-ratio: 1 / 1.5;
     background: var(--clr-1);
     border-radius: 0.5rem;
+    border: 7px white inset;
 
     position: relative;
-}
 
-.card::before,
-.card::after {
-    content: "";
-    position: absolute;
-    inset: -0.5rem;
-    z-index: -1;
-    background: conic-gradient(from var(--gradient-angle),
-            var(--clr-3),
-            var(--clr-4),
-            var(--clr-5),
-            var(--clr-4),
-            var(--clr-3));
-    border-radius: inherit;
-    animation: rotation 20s linear infinite;
-}
-
-.card::after {
-    filter: blur(3.5rem);
-}
-
-@keyframes rotation {
-    0% {
-        --gradient-angle: 0deg;
-    }
-
-    100% {
-        --gradient-angle: 360deg;
-    }
-}
-
-h1 {
-    font-size: 30px;
+    display: grid;
     text-align: center;
-    font-family: Didot;
+    align-items: center;
+    font-family: 'Anonymous Pro', monospace,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 2rem 2rem 0 2rem;
 }
 
-.mensaje {
-    font-size: 18px;
-    text-align: center;
-    font-family: Garamond;
+.mensaje, .buttons, .newMessage {
+
+display: grid;
+justify-items: center;
+font-family: 'Roboto Mono', monospace;
+font-size: 1.2rem;
+
 }
 
 
-#offset {
-    width: 50px;
+#offset, #Message {
+    width: 175px;
+    height: 20px;
     text-align: center;
 }
 
 #encodeButton,#decodeButton {
-    font-size: 15px;
-    width: 50%;
+    font-size: 1.1rem;
+    width: 55%;
     height: 30px;
-    background-color: gray;
+    background-color: #51a9ece8;
     color: white;
-    border-radius: 12px;
-    /*margin-left: 120px;*/
+    border-radius: 10px;
     cursor: pointer;
     border: 2px solid white;
-    font-family: Courier New;
+    font-family: 'Roboto Mono', monospace, Courier New;
 }  
 
 #encodeButton:hover,
 #decodeButton:hover {
-    background-color: #922B21;
+    background-color: #004461;
     color: white;
     border: 2px solid white;
 }
 
 #mensajeCifrado {
-    width: 250px;
-    height: 20px;
-    background-color: #F5CBA7;
-    border: #F5CBA7;
+    background-color: #0293D2;
+    border: none;
     text-align: center;
-    color: #922B21;
+    color: white;
     font-weight: 700;
-} 
+    font-size: 1.2rem; 
+}

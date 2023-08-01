@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <script src="index.js" type="module"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Roboto+Mono:wght@200;300&display=swap');
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -27,31 +27,26 @@
 
   <main>
     <div class="card">
-      <h1>Bienvenido agente 🕵🏻‍♀️</h1>
       <form>
         <div class="mensaje">
-          <label for="Messaje">Ingresa el mensaje:</label>
-          <input type="text" id="Messaje"
+          <label for="Message">Message:</label>
+          <input type="text" id="Message"
             onkeypress="return (event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" />
           <!-- ascii de la tecla -->
           <br>
-          <br>
-          <label for="offset">Desplazamiento:</label>
-          <br>
+          
+          <label for="offset">offset:</label>
           <input type="text" id="offset" name="offset"
             onkeypress=" return (event.charCode >= 48 && event.charCode <= 57)">
         </div>
       </form>
-      <br>
-      <div>
-        <button type="button" id="encodeButton"> Codificar </button>
+      <div class="buttons">
+        <button type="button" id="encodeButton"> Encode </button>
+        <br>
+        <button type="button" id="decodeButton"> Decode </button>
       </div>
-      <br>
-      <div>
-        <button type="button" id="decodeButton"> Decodificar </button>
-      </div>
-      <div>
-        <p><input type="text" id="mensajeCifrado"></p>
+      <div class="newMessage">
+        <input type="text" id="mensajeCifrado">
       </div>
     </div>
   </main>
